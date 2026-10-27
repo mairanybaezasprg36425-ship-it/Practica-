@@ -87,5 +87,10 @@ namespace Operaciones_basicas
 
 			lblResultado.Text= "x1= "+X1+"            "+"x2= "+X2;		
 		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+			Close();
+		}
 	}
 }

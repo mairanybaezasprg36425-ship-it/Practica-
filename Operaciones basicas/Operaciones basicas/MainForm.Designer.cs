@@ -49,10 +49,12 @@ namespace Operaciones_basicas
 			this.label2 = new System.Windows.Forms.Label();
 			this.txtC = new System.Windows.Forms.TextBox();
 			this.btnCalcular = new System.Windows.Forms.Button();
+			this.button1 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lblNum1
 			// 
+			this.lblNum1.Font = new System.Drawing.Font("Nirmala Text", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblNum1.Location = new System.Drawing.Point(12, 26);
 			this.lblNum1.Name = "lblNum1";
 			this.lblNum1.Size = new System.Drawing.Size(110, 23);
@@ -61,6 +63,7 @@ namespace Operaciones_basicas
 			// 
 			// label1
 			// 
+			this.label1.Font = new System.Drawing.Font("Nirmala Text", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.Location = new System.Drawing.Point(13, 70);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(131, 23);
@@ -83,42 +86,46 @@ namespace Operaciones_basicas
 			// 
 			// btnSuma
 			// 
+			this.btnSuma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
 			this.btnSuma.Location = new System.Drawing.Point(13, 172);
 			this.btnSuma.Name = "btnSuma";
 			this.btnSuma.Size = new System.Drawing.Size(75, 33);
 			this.btnSuma.TabIndex = 4;
 			this.btnSuma.Text = "Suma";
-			this.btnSuma.UseVisualStyleBackColor = true;
+			this.btnSuma.UseVisualStyleBackColor = false;
 			this.btnSuma.Click += new System.EventHandler(this.BtnSumaClick);
 			// 
 			// btnResta
 			// 
+			this.btnResta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
 			this.btnResta.Location = new System.Drawing.Point(236, 171);
 			this.btnResta.Name = "btnResta";
 			this.btnResta.Size = new System.Drawing.Size(75, 33);
 			this.btnResta.TabIndex = 5;
 			this.btnResta.Text = "Resta";
-			this.btnResta.UseVisualStyleBackColor = true;
+			this.btnResta.UseVisualStyleBackColor = false;
 			this.btnResta.Click += new System.EventHandler(this.BtnRestaClick);
 			// 
 			// btnDividir
 			// 
+			this.btnDividir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
 			this.btnDividir.Location = new System.Drawing.Point(13, 232);
 			this.btnDividir.Name = "btnDividir";
 			this.btnDividir.Size = new System.Drawing.Size(75, 37);
 			this.btnDividir.TabIndex = 6;
 			this.btnDividir.Text = "Division";
-			this.btnDividir.UseVisualStyleBackColor = true;
+			this.btnDividir.UseVisualStyleBackColor = false;
 			this.btnDividir.Click += new System.EventHandler(this.BtnDividirClick);
 			// 
 			// btnMuti
 			// 
+			this.btnMuti.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
 			this.btnMuti.Location = new System.Drawing.Point(94, 232);
 			this.btnMuti.Name = "btnMuti";
 			this.btnMuti.Size = new System.Drawing.Size(136, 37);
 			this.btnMuti.TabIndex = 7;
 			this.btnMuti.Text = "Multiplicacion";
-			this.btnMuti.UseVisualStyleBackColor = true;
+			this.btnMuti.UseVisualStyleBackColor = false;
 			this.btnMuti.Click += new System.EventHandler(this.BtnMutiClick);
 			// 
 			// lblResultado
@@ -127,20 +134,21 @@ namespace Operaciones_basicas
 			this.lblResultado.Name = "lblResultado";
 			this.lblResultado.Size = new System.Drawing.Size(228, 23);
 			this.lblResultado.TabIndex = 8;
-			//this.lblResultado.Click += new System.EventHandler(this.LblResultadoClick);
 			// 
 			// btnModulo
 			// 
+			this.btnModulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
 			this.btnModulo.Location = new System.Drawing.Point(236, 232);
 			this.btnModulo.Name = "btnModulo";
 			this.btnModulo.Size = new System.Drawing.Size(87, 37);
 			this.btnModulo.TabIndex = 9;
 			this.btnModulo.Text = "Modulo";
-			this.btnModulo.UseVisualStyleBackColor = true;
+			this.btnModulo.UseVisualStyleBackColor = false;
 			this.btnModulo.Click += new System.EventHandler(this.BtnModuloClick);
 			// 
 			// label2
 			// 
+			this.label2.Font = new System.Drawing.Font("Nirmala Text", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label2.Location = new System.Drawing.Point(13, 117);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(131, 23);
@@ -156,19 +164,33 @@ namespace Operaciones_basicas
 			// 
 			// btnCalcular
 			// 
+			this.btnCalcular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
 			this.btnCalcular.Location = new System.Drawing.Point(94, 175);
 			this.btnCalcular.Name = "btnCalcular";
 			this.btnCalcular.Size = new System.Drawing.Size(136, 30);
 			this.btnCalcular.TabIndex = 12;
 			this.btnCalcular.Text = "Calcular x1 y x2";
-			this.btnCalcular.UseVisualStyleBackColor = true;
+			this.btnCalcular.UseVisualStyleBackColor = false;
 			this.btnCalcular.Click += new System.EventHandler(this.BtnCalcularClick);
+			// 
+			// button1
+			// 
+			this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+			this.button1.Location = new System.Drawing.Point(124, 339);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(75, 41);
+			this.button1.TabIndex = 13;
+			this.button1.Text = "Salir";
+			this.button1.UseVisualStyleBackColor = false;
+			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(335, 360);
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.ClientSize = new System.Drawing.Size(335, 392);
+			this.Controls.Add(this.button1);
 			this.Controls.Add(this.btnCalcular);
 			this.Controls.Add(this.txtC);
 			this.Controls.Add(this.label2);
@@ -187,6 +209,7 @@ namespace Operaciones_basicas
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button btnCalcular;
 		private System.Windows.Forms.TextBox txtC;
 		private System.Windows.Forms.Label label2;
