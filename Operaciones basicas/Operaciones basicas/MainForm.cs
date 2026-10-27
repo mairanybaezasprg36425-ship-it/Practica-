@@ -66,11 +66,6 @@ namespace Operaciones_basicas
 			lblResultado.Text=txtNum1.Text+"/"+txtNum2.Text+"= "+Convert.ToString(divi);			
 		}
 		
-		void LblResultadoClick(object sender, EventArgs e)
-		{
-			
-		}
-		
 		void BtnModuloClick(object sender, EventArgs e)
 		{
 			double num1, num2, modu;
@@ -78,6 +73,19 @@ namespace Operaciones_basicas
 			num2=Convert.ToDouble(txtNum2.Text);
 			modu=num1%num2;
 			lblResultado.Text=txtNum1.Text+"%"+txtNum2.Text+"= "+Convert.ToString(modu);			
+		}
+		
+		void BtnCalcularClick(object sender, EventArgs e)
+		{
+			double a, b, c, raiz;
+			raiz=0;
+			a=Convert.ToDouble(txtNum1. Text);
+			b=Convert. ToDouble(txtNum2.Text);
+			c=Convert. ToDouble(txtC.Text);
+			double X2=(-b-Math.Sqrt(Math.Pow(b,2)-4*a*c))/(2*a);
+			double X1=(-b+Math.Sqrt(Math.Pow(b,2)-4*a*c))/(2*a);	
+
+			lblResultado.Text= "x1= "+X1+"            "+"x2= "+X2;		
 		}
 	}
 }

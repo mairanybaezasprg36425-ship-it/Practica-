@@ -46,6 +46,9 @@ namespace Operaciones_basicas
 			this.btnMuti = new System.Windows.Forms.Button();
 			this.lblResultado = new System.Windows.Forms.Label();
 			this.btnModulo = new System.Windows.Forms.Button();
+			this.label2 = new System.Windows.Forms.Label();
+			this.txtC = new System.Windows.Forms.TextBox();
+			this.btnCalcular = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lblNum1
@@ -54,15 +57,15 @@ namespace Operaciones_basicas
 			this.lblNum1.Name = "lblNum1";
 			this.lblNum1.Size = new System.Drawing.Size(110, 23);
 			this.lblNum1.TabIndex = 0;
-			this.lblNum1.Text = "Numero 1:";
+			this.lblNum1.Text = "Numero 1(A):";
 			// 
 			// label1
 			// 
 			this.label1.Location = new System.Drawing.Point(13, 70);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(100, 23);
+			this.label1.Size = new System.Drawing.Size(131, 23);
 			this.label1.TabIndex = 1;
-			this.label1.Text = "Numero 2:";
+			this.label1.Text = "Numero 2(B):";
 			// 
 			// txtNum1
 			// 
@@ -80,7 +83,7 @@ namespace Operaciones_basicas
 			// 
 			// btnSuma
 			// 
-			this.btnSuma.Location = new System.Drawing.Point(12, 134);
+			this.btnSuma.Location = new System.Drawing.Point(13, 172);
 			this.btnSuma.Name = "btnSuma";
 			this.btnSuma.Size = new System.Drawing.Size(75, 33);
 			this.btnSuma.TabIndex = 4;
@@ -90,7 +93,7 @@ namespace Operaciones_basicas
 			// 
 			// btnResta
 			// 
-			this.btnResta.Location = new System.Drawing.Point(225, 133);
+			this.btnResta.Location = new System.Drawing.Point(236, 171);
 			this.btnResta.Name = "btnResta";
 			this.btnResta.Size = new System.Drawing.Size(75, 33);
 			this.btnResta.TabIndex = 5;
@@ -100,7 +103,7 @@ namespace Operaciones_basicas
 			// 
 			// btnDividir
 			// 
-			this.btnDividir.Location = new System.Drawing.Point(13, 173);
+			this.btnDividir.Location = new System.Drawing.Point(13, 232);
 			this.btnDividir.Name = "btnDividir";
 			this.btnDividir.Size = new System.Drawing.Size(75, 37);
 			this.btnDividir.TabIndex = 6;
@@ -110,9 +113,9 @@ namespace Operaciones_basicas
 			// 
 			// btnMuti
 			// 
-			this.btnMuti.Location = new System.Drawing.Point(225, 172);
+			this.btnMuti.Location = new System.Drawing.Point(94, 232);
 			this.btnMuti.Name = "btnMuti";
-			this.btnMuti.Size = new System.Drawing.Size(75, 38);
+			this.btnMuti.Size = new System.Drawing.Size(136, 37);
 			this.btnMuti.TabIndex = 7;
 			this.btnMuti.Text = "Multiplicacion";
 			this.btnMuti.UseVisualStyleBackColor = true;
@@ -120,27 +123,55 @@ namespace Operaciones_basicas
 			// 
 			// lblResultado
 			// 
-			this.lblResultado.Location = new System.Drawing.Point(42, 285);
+			this.lblResultado.Location = new System.Drawing.Point(50, 295);
 			this.lblResultado.Name = "lblResultado";
 			this.lblResultado.Size = new System.Drawing.Size(228, 23);
 			this.lblResultado.TabIndex = 8;
-			this.lblResultado.Click += new System.EventHandler(this.LblResultadoClick);
+			//this.lblResultado.Click += new System.EventHandler(this.LblResultadoClick);
 			// 
 			// btnModulo
 			// 
-			this.btnModulo.Location = new System.Drawing.Point(115, 134);
+			this.btnModulo.Location = new System.Drawing.Point(236, 232);
 			this.btnModulo.Name = "btnModulo";
-			this.btnModulo.Size = new System.Drawing.Size(87, 32);
+			this.btnModulo.Size = new System.Drawing.Size(87, 37);
 			this.btnModulo.TabIndex = 9;
 			this.btnModulo.Text = "Modulo";
 			this.btnModulo.UseVisualStyleBackColor = true;
 			this.btnModulo.Click += new System.EventHandler(this.BtnModuloClick);
 			// 
+			// label2
+			// 
+			this.label2.Location = new System.Drawing.Point(13, 117);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(131, 23);
+			this.label2.TabIndex = 10;
+			this.label2.Text = "Valor c:";
+			// 
+			// txtC
+			// 
+			this.txtC.Location = new System.Drawing.Point(151, 113);
+			this.txtC.Name = "txtC";
+			this.txtC.Size = new System.Drawing.Size(140, 26);
+			this.txtC.TabIndex = 11;
+			// 
+			// btnCalcular
+			// 
+			this.btnCalcular.Location = new System.Drawing.Point(94, 175);
+			this.btnCalcular.Name = "btnCalcular";
+			this.btnCalcular.Size = new System.Drawing.Size(136, 30);
+			this.btnCalcular.TabIndex = 12;
+			this.btnCalcular.Text = "Calcular x1 y x2";
+			this.btnCalcular.UseVisualStyleBackColor = true;
+			this.btnCalcular.Click += new System.EventHandler(this.BtnCalcularClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(323, 342);
+			this.ClientSize = new System.Drawing.Size(335, 360);
+			this.Controls.Add(this.btnCalcular);
+			this.Controls.Add(this.txtC);
+			this.Controls.Add(this.label2);
 			this.Controls.Add(this.btnModulo);
 			this.Controls.Add(this.lblResultado);
 			this.Controls.Add(this.btnMuti);
@@ -156,6 +187,9 @@ namespace Operaciones_basicas
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnCalcular;
+		private System.Windows.Forms.TextBox txtC;
+		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button btnModulo;
 		private System.Windows.Forms.Label lblResultado;
 		private System.Windows.Forms.Button btnMuti;
