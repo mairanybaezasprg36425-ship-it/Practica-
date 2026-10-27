@@ -29,5 +29,41 @@ namespace Operaciones_basicas
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void BtnSumaClick(object sender, EventArgs e)
+		{
+			double num1, num2, suma;
+			num1=Convert.ToDouble(txtNum1.Text);
+			num2=Convert.ToDouble(txtNum2.Text);
+			suma=num1+num2;
+			lblResultado.Text=txtNum1.Text+"+"+txtNum2.Text+"= "+Convert.ToString(suma);			
+		}
+		
+		void BtnMutiClick(object sender, EventArgs e)
+		{
+			double num1, num2, multi;
+			num1=Convert.ToDouble(txtNum1.Text);
+			num2=Convert.ToDouble(txtNum2.Text);
+			multi=num1*num2;
+			lblResultado.Text=txtNum1.Text+"*"+txtNum2.Text+"= "+Convert.ToString(multi);					
+		}
+		
+		void BtnRestaClick(object sender, EventArgs e)
+		{
+			double num1, num2, resta;
+			num1=Convert.ToDouble(txtNum1.Text);
+			num2=Convert.ToDouble(txtNum2.Text);
+			resta=num1-num2;
+			lblResultado.Text=txtNum1.Text+"-"+txtNum2.Text+"= "+Convert.ToString(resta);			
+		}
+		
+		void BtnDividirClick(object sender, EventArgs e)
+		{
+			double num1, num2, divi;
+			num1=Convert.ToDouble(txtNum1.Text);
+			num2=Convert.ToDouble(txtNum2.Text);
+			divi=num1/num2;
+			lblResultado.Text=txtNum1.Text+"/"+txtNum2.Text+"= "+Convert.ToString(divi);			
+		}
 	}
 }
