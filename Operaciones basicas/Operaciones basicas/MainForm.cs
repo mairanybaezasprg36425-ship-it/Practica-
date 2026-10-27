@@ -65,5 +65,19 @@ namespace Operaciones_basicas
 			divi=num1/num2;
 			lblResultado.Text=txtNum1.Text+"/"+txtNum2.Text+"= "+Convert.ToString(divi);			
 		}
+		
+		void LblResultadoClick(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void BtnModuloClick(object sender, EventArgs e)
+		{
+			double num1, num2, modu;
+			num1=Convert.ToDouble(txtNum1.Text);
+			num2=Convert.ToDouble(txtNum2.Text);
+			modu=num1%num2;
+			lblResultado.Text=txtNum1.Text+"%"+txtNum2.Text+"= "+Convert.ToString(modu);			
+		}
 	}
 }

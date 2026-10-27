@@ -45,6 +45,7 @@ namespace Operaciones_basicas
 			this.btnDividir = new System.Windows.Forms.Button();
 			this.btnMuti = new System.Windows.Forms.Button();
 			this.lblResultado = new System.Windows.Forms.Label();
+			this.btnModulo = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lblNum1
@@ -119,16 +120,28 @@ namespace Operaciones_basicas
 			// 
 			// lblResultado
 			// 
-			this.lblResultado.Location = new System.Drawing.Point(63, 235);
+			this.lblResultado.Location = new System.Drawing.Point(42, 285);
 			this.lblResultado.Name = "lblResultado";
 			this.lblResultado.Size = new System.Drawing.Size(228, 23);
 			this.lblResultado.TabIndex = 8;
+			this.lblResultado.Click += new System.EventHandler(this.LblResultadoClick);
+			// 
+			// btnModulo
+			// 
+			this.btnModulo.Location = new System.Drawing.Point(115, 134);
+			this.btnModulo.Name = "btnModulo";
+			this.btnModulo.Size = new System.Drawing.Size(87, 32);
+			this.btnModulo.TabIndex = 9;
+			this.btnModulo.Text = "Modulo";
+			this.btnModulo.UseVisualStyleBackColor = true;
+			this.btnModulo.Click += new System.EventHandler(this.BtnModuloClick);
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(323, 276);
+			this.ClientSize = new System.Drawing.Size(323, 342);
+			this.Controls.Add(this.btnModulo);
 			this.Controls.Add(this.lblResultado);
 			this.Controls.Add(this.btnMuti);
 			this.Controls.Add(this.btnDividir);
@@ -143,6 +156,7 @@ namespace Operaciones_basicas
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnModulo;
 		private System.Windows.Forms.Label lblResultado;
 		private System.Windows.Forms.Button btnMuti;
 		private System.Windows.Forms.Button btnDividir;
